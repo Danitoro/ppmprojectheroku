@@ -41,6 +41,7 @@ public class User implements UserDetails {
         this.id = id;
     }
 
+
     public String getUsername() {
         return username;
     }
@@ -88,6 +89,8 @@ public class User implements UserDetails {
     public void setUpdate_At(Date update_At) {
         this.update_At = update_At;
     }
+
+
 
     @PrePersist
     protected void onCreate() {
