@@ -77,7 +77,6 @@ public class ProjectTaskService {
 
     public ProjectTask findPTByProjectSequence(String backlog_id, String pt_id, String username) {
 
-
         projectService.findProjectByIdentifier(backlog_id, username);
         Backlog backlog = backlogRepository.findByProjectIdentifier(backlog_id);
         if(backlog==null){
